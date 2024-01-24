@@ -1,0 +1,195 @@
+.header{
+
+}
+
+.header__article{
+
+}
+
+/* --- */
+.header__locationandloginbutton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 3em;
+}
+
+.header__sectioniconmappin{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.header__sectioniconmappin p{
+    color: #545454;
+}
+
+
+.header__changeoptionsandregister{
+    display: flex;
+    gap: 2em;
+}
+
+
+
+.header__languageandprice{
+    gap: 0.5em;
+    display: flex;
+}
+
+.header__languageandprice > div{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.header__languageandprice > div p{
+
+}
+
+.header__languageandprice > div i{
+
+}
+
+
+.header__singinandsingup{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+/* --- */
+
+.header__logosearchanddetails{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 3em;
+}
+
+.header__sectionlogo{
+
+}
+
+.header__search{
+    display: flex;
+    align-items: center;
+    gap: 5em;
+    background-color: #fff;
+    border-radius: 0.5em;
+    border-style: solid;
+    border-width: 0.1em;
+    border-color: #b9b9b9;
+}
+
+.header__search  div:first-child{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-left: 1em;
+}
+
+.header__search  div:first-child input{
+    font-size: 1.2em;
+    border: none;
+    background-color: #fff0;
+}
+
+.header__search  div:first-child input:focus{
+    outline: none;
+}
+
+.header__search div:last-child{
+    
+}
+
+.header__search div:last-child button{
+    font-size: 1.1em;
+    padding: 1em;
+    background-color: #00B207;
+    border: none;
+    color: #ffff;
+    font-weight: bold;
+    border-radius: 0em 0.4em 0.4em 0em;
+}
+
+.header__favoritesandprices{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header__favoritesandprices hr{
+    transform: rotate(90deg);
+    width: 2em;
+}
+
+.header__favoritesandprices div:first-child{
+    
+}
+
+.header__favoritesandprices div:last-child{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+/* ----------- */
+
+.header__menu{
+    background-color: #333333;
+    padding: 1em 5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 5em;
+}
+
+.header__divmenu{
+
+}
+
+.header__nav{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+
+}
+
+.header__nav > div{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.header__nav > div a{
+    font-size: 1.5em;
+    color: #999999;
+    font-family: Arial;
+}
+
+.header__nav > div i{
+
+}
+
+.header__nav > a{
+    font-size: 1.5em;
+    color: #999999;
+    font-family: Arial;
+}
+
+.header__phonenumber{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.header__phonenumber i{
+    
+}
+
+.header__phonenumber p{
+    font-size: 1.2em;
+    color: #fff;
+    font-family: Arial;
+}
