@@ -3,16 +3,12 @@
     --font-family:'Poppins', sans-serif;
 }
 
+.fontpoppins{
+    font-family: var(--font-family);
+}
+
 
 /* --------------------- */
-
-.header{
-
-}
-
-.header__article{
-
-}
 
 /* --- */
 .header__locationandloginbutton{
@@ -52,7 +48,14 @@
 }
 
 .header__languageandprice > div p{
+    cursor: pointer;
+    transition: 0.5s;
+}
 
+
+.header__languageandprice > div p:hover{
+    color: #00B207;
+    transition: 0.5s;
 }
 
 .header__languageandprice > div i{
@@ -64,6 +67,17 @@
     display: flex;
     align-items: center;
     gap: 0.5em;
+    transition: 0.5s;
+}
+
+.header__singinandsingup > a{
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.header__singinandsingup > a:hover{
+    color: #00B207;
+    transition: 0.5s;
 }
 /* --- */
 
@@ -87,6 +101,10 @@
     border-style: solid;
     border-width: 0.1em;
     border-color: #b9b9b9;
+}
+
+.header__search:hover{
+    border-color: #00B207;
 }
 
 .header__search  div:first-child{
@@ -119,6 +137,13 @@
     color: #ffff;
     font-weight: bold;
     border-radius: 0em 0.4em 0.4em 0em;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.header__search div:last-child button:hover{
+    background-color: #00cd07;
+    transition: 0.5s;
 }
 
 .header__favoritesandprices{
@@ -140,6 +165,10 @@
     display: flex;
     align-items: center;
     gap: 1em;
+}
+
+.header__favoritesandprices div:last-child div:last-child span{
+    font-weight: 600;
 }
 
 /* ----------- */
@@ -169,22 +198,38 @@
     display: flex;
     align-items: center;
     gap: 0.5em;
+    cursor: pointer;
+}
+
+.header__nav > div:hover a{
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.header__nav > div:hover i img{
+    transform: rotate(359deg);
 }
 
 .header__nav > div a{
-    font-size: 1.5em;
+    font-size: 1em;
     color: #999999;
-    font-family: Arial;
+    font-family: var(--font-family);
+    cursor: pointer;
+    transition: 0.5s;
 }
 
-.header__nav > div i{
-
-}
 
 .header__nav > a{
-    font-size: 1.5em;
+    font-size: 1em;
     color: #999999;
-    font-family: Arial;
+    font-family: var(--font-family);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.header__nav > a:hover{
+    color: #ffffff;
+    transition: 0.5s;
 }
 
 .header__phonenumber{
@@ -200,5 +245,5 @@
 .header__phonenumber p{
     font-size: 1.2em;
     color: #fff;
-    font-family: Arial;
+    font-family: var(--font-family);
 }

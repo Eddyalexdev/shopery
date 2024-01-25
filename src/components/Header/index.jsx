@@ -4,42 +4,44 @@ import "./style.css";
 import IconHeart from "../../assets/icon/Heart.png";
 import IconLogo from "../../assets/icon/Logo.png";
 import IconArrowGray from "../../assets/icon/gray-arrow.png";
-import IconArrow from "../../assets/icon/arrow.png";
 import IconSearch from "../../assets/icon/search.png";
 import Rectangle from "../../assets/icon/Rectangle.png";
 import IconMapPin from "../../assets/icon/map-pin.png";
 import IconGroup from "../../assets/icon/group.png";
+import NavLink from "./NavLink";
 
 
 
 const Header = () => {
+
+
     return(
         <header className="header">
             <article className="header__article"> 
                 <section className="header__locationandloginbutton">
                     <section className="header__sectioniconmappin">
                         <img src={IconMapPin}/>
-                        <p>Store Location: LincoIn- 344, illinois, Chicago, USA</p>
+                        <p className="fontpoppins">Store Location: LincoIn- 344, illinois, Chicago, USA</p>
                     </section>
 
                     <section className="header__changeoptionsandregister">
                         <div className="header__languageandprice">
                             <div>
-                                <p>Eng</p>
+                                <p className="fontpoppins">Eng</p>
                                 <i>
                                     <img src={IconArrowGray}/>
                                 </i>
                             </div>
 
                             <div>
-                                <p>USD</p>
+                                <p className="fontpoppins">USD</p>
                                 <i>
                                     <img src={IconArrowGray}/>
                                 </i>
                             </div>
                         </div>
                         <hr/>
-                        <div className="header__singinandsingup">
+                        <div className="header__singinandsingup fontpoppins">
                             <a>Sing In</a>
                             <p>/</p>
                             <a>Sing Up</a>
@@ -86,7 +88,7 @@ const Header = () => {
                                 </i>
                             </div>
 
-                            <div>
+                            <div className="fontpoppins">
                                 <p>Shopping Cart:</p>
                                 <span>$0.00</span>
                             </div>
@@ -97,34 +99,10 @@ const Header = () => {
                 <section className="header__menu">
                     <div className="header__divmenu">
                         <nav className="header__nav">
-                            <div>
-                                <a>Home</a>
-                                <i>
-                                    <img src={IconArrow}/>
-                                </i>
-                            </div>
-
-                            <div>
-                                <a>Home</a>
-                                <i>
-                                    <img src={IconArrowGray}/>
-                                </i>
-                            </div>
-
-                            <div>
-                                <a>Home</a>
-                                <i>
-                                    <img src={IconArrowGray}/>
-                                </i>
-                            </div>
-
-                            <div>
-                                <a>Home</a>
-                                <i>
-                                    <img src={IconArrowGray}/>
-                                </i>
-                            </div>
-
+                            <NavLink text="Home"/>
+                            <NavLink text="Shop"/>
+                            <NavLink text="Pages"/>
+                            <NavLink text="Blog"/>
                             <a>About Us</a>
                             <a>Contact Us</a>
                         </nav>
