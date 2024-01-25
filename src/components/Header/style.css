@@ -1,3 +1,11 @@
+
+:root{
+    --font-family:'Poppins', sans-serif;
+}
+
+
+/* --------------------- */
+
 .header{
 
 }
@@ -73,7 +81,7 @@
 .header__search{
     display: flex;
     align-items: center;
-    gap: 5em;
+    gap: 0em;
     background-color: #fff;
     border-radius: 0.5em;
     border-style: solid;
@@ -92,6 +100,7 @@
     font-size: 1.2em;
     border: none;
     background-color: #fff0;
+    width: 20em;
 }
 
 .header__search  div:first-child input:focus{
