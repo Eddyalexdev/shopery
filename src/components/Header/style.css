@@ -12,16 +12,21 @@
 
 /* --- */
 .header__locationandloginbutton{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 1em 3em;
+
+    &.header__locationandloginbutton--flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 .header__sectioniconmappin{
-    display: flex;
-    align-items: center;
-    gap: 1em;
+    &.header__sectioniconmappin--flex{
+        display: flex;
+        align-items: center;
+        gap: 1em;   
+    }
 }
 
 .header__sectioniconmappin p{
@@ -30,15 +35,22 @@
 
 
 .header__changeoptionsandregister{
-    display: flex;
-    gap: 2em;
+
+    &.header__changeoptionsandregister--flex{
+        display: flex;
+        gap: 2em;
+    }
 }
 
 
 
 .header__languageandprice{
-    gap: 0.5em;
-    display: flex;
+    
+
+    &.header__languageandprice--flex{
+        gap: 0.5em;
+        display: flex;
+    }
 }
 
 .header__languageandprice > div{
@@ -49,43 +61,45 @@
 
 .header__languageandprice > div p{
     cursor: pointer;
-    transition: 0.5s;
+    transition: color 0.5s;
+    color: #000000;
 }
 
 
 .header__languageandprice > div p:hover{
     color: #00B207;
-    transition: 0.5s;
 }
-
-.header__languageandprice > div i{
-
-}
-
 
 .header__singinandsingup{
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
     transition: 0.5s;
+
+    &.header__singinandsingup--flex{
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+    }
 }
 
 .header__singinandsingup > a{
     cursor: pointer;
     font-weight: 600;
+    color: #000000;
+    transition: color 0.5s;
 }
 
 .header__singinandsingup > a:hover{
     color: #00B207;
-    transition: 0.5s;
 }
 /* --- */
 
 .header__logosearchanddetails{
+    padding: 1em 3em;
+
+    &.header__logosearchanddetails--flex{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1em 3em;
+    }
 }
 
 .header__sectionlogo{
@@ -93,14 +107,17 @@
 }
 
 .header__search{
-    display: flex;
-    align-items: center;
-    gap: 0em;
     background-color: #fff;
     border-radius: 0.5em;
     border-style: solid;
     border-width: 0.1em;
     border-color: #b9b9b9;
+
+    &.header__search--flex{
+        display: flex;
+        align-items: center;
+        gap: 0em;
+    }
 }
 
 .header__search:hover{
@@ -147,9 +164,12 @@
 }
 
 .header__favoritesandprices{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+
+    &.header__favoritesandprices--flex{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
 }
 
 .header__favoritesandprices hr{
@@ -176,11 +196,13 @@
 .header__menu{
     background-color: #333333;
     padding: 1em 5em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1em 5em;
+
+    &.header__menu--flex{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 .header__divmenu{
@@ -188,9 +210,12 @@
 }
 
 .header__nav{
-    display: flex;
-    align-items: center;
-    gap: 2em;
+
+    &.header__nav--flex{
+        display: flex;
+        align-items: center;
+        gap: 2em;
+    }
 
 }
 
@@ -201,21 +226,20 @@
     cursor: pointer;
 }
 
-.header__nav > div:hover a{
-    color: #ffffff;
-    transition: 0.5s;
-}
-
-.header__nav > div:hover i img{
-    transform: rotate(359deg);
-}
-
 .header__nav > div a{
     font-size: 1em;
     color: #999999;
     font-family: var(--font-family);
     cursor: pointer;
-    transition: 0.5s;
+    transition: color .5s;
+}
+
+.header__nav > div:hover a{
+    color: #ffffff;
+}
+
+.header__nav > div:hover i img{
+    transform: rotate(359deg);
 }
 
 
@@ -223,24 +247,23 @@
     font-size: 1em;
     color: #999999;
     font-family: var(--font-family);
-    transition: 0.5s;
+    transition: color .5s;
     cursor: pointer;
 }
 
 .header__nav > a:hover{
     color: #ffffff;
-    transition: 0.5s;
 }
 
 .header__phonenumber{
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
+
+    &.header__phonenumber--flex{
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+    }
 }
 
-.header__phonenumber i{
-    
-}
 
 .header__phonenumber p{
     font-size: 1.2em;
