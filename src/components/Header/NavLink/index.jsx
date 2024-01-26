@@ -14,7 +14,6 @@ const NavLink = ({text}) => {
         setImgChange(IconArrowGray);
     }
 
-
     return(
         <div onMouseEnter={() => imageChangeEnter()} onMouseLeave={() => imageChangeLeave()}> 
             <a>{text}</a>

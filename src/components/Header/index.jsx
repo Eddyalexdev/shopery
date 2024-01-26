@@ -18,14 +18,14 @@ const Header = () => {
     return(
         <header className="header">
             <article className="header__article"> 
-                <section className="header__locationandloginbutton">
-                    <section className="header__sectioniconmappin">
+                <section className="header__locationandloginbutton header__locationandloginbutton--flex">
+                    <section className="header__sectioniconmappin header__sectioniconmappin--flex">
                         <img src={IconMapPin}/>
                         <p className="fontpoppins">Store Location: LincoIn- 344, illinois, Chicago, USA</p>
                     </section>
 
-                    <section className="header__changeoptionsandregister">
-                        <div className="header__languageandprice">
+                    <section className="header__changeoptionsandregister header__changeoptionsandregister--flex">
+                        <div className="header__languageandprice header__languageandprice--flex">
                             <div>
                                 <p className="fontpoppins">Eng</p>
                                 <i>
@@ -41,7 +41,7 @@ const Header = () => {
                             </div>
                         </div>
                         <hr/>
-                        <div className="header__singinandsingup fontpoppins">
+                        <div className="header__singinandsingup header__singinandsingup--flex fontpoppins">
                             <a>Sing In</a>
                             <p>/</p>
                             <a>Sing Up</a>
@@ -51,12 +51,12 @@ const Header = () => {
 
                 <hr/>
 
-                <section className="header__logosearchanddetails">
+                <section className="header__logosearchanddetails header__logosearchanddetails--flex">
                     <section className="header__sectionlogo" >
                         <img className="header__logo" src={IconLogo}/>
                     </section>
 
-                    <section className="header__search">
+                    <section className="header__search header__search--flex">
                         <div>
                             <i>
                                 <img src={IconSearch}  />
@@ -72,7 +72,7 @@ const Header = () => {
                         </div>
                     </section>
 
-                    <section className="header__favoritesandprices">
+                    <section className="header__favoritesandprices header__favoritesandprices--flex">
                         <div>
                             <i>
                                 <img src={IconHeart}/>
@@ -96,9 +96,9 @@ const Header = () => {
                     </section>
                 </section>
                 
-                <section className="header__menu">
+                <section className="header__menu header__menu--flex">
                     <div className="header__divmenu">
-                        <nav className="header__nav">
+                        <nav className="header__nav header__nav--flex">
                             <NavLink text="Home"/>
                             <NavLink text="Shop"/>
                             <NavLink text="Pages"/>
@@ -108,7 +108,7 @@ const Header = () => {
                         </nav>
                     </div>
 
-                    <div className="header__phonenumber">
+                    <div className="header__phonenumber header__phonenumber--flex">
                         <i>
                             <img src={IconGroup}/>
                         </i>
